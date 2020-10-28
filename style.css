@@ -1,0 +1,76 @@
+:root {
+    /* gruvbox dark hard */
+    --base00: #1d2021; /* ----*/
+    --base01: #3c3836; /* ---*/
+    --base02: #504945; /* --*/
+    --base03: #665c54; /* -*/
+    --base04: #bdae93; /* +*/
+    --base05: #d5c4a1; /* ++*/
+    --base06: #ebdbb2; /* +++*/
+    --base07: #fbf1c7; /* ++++*/
+    --base08: #fb4934; /* red*/
+    --base09: #fe8019; /* orange*/
+    --base0A: #fabd2f; /* yellow*/
+    --base0B: #b8bb26; /* green*/
+    --base0C: #8ec07c; /* aqua/cyan*/
+    --base0D: #83a598; /* blue*/
+    --base0E: #d3869b; /* purple*/
+    --base0F: #d65d0e; /* brown*/
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+  font-family: "Fira Sans", sans-serif;
+  background-color: var(--base00);
+  color: var(--base05);
+}
+
+.header {
+  background-color: var(--base00);
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: var(--base01);
+}
+
+.menu li:hover {
+  background-color: var(--base02);
+  color: var(--base08);
+}
