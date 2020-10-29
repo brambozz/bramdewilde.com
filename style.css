@@ -18,20 +18,19 @@
     --base0F: #d65d0e; /* brown*/
 }
 
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 [class*="col-"] {
-  float: left;
-  padding: 15px;
+    float: left;
+    padding: 15px;
 }
 
 .col-1 {width: 8.33%;}
@@ -48,29 +47,36 @@
 .col-12 {width: 100%;}
 
 html {
-  font-family: "Fira Sans", sans-serif;
-  background-color: var(--base00);
-  color: var(--base05);
+    font-family: "Fira Sans", sans-serif;
+    background-color: var(--base00);
+    color: var(--base05);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px var(--base01);
+}
+
+
 .header {
-  background-color: var(--base00);
-  padding: 15px;
+    background-color: var(--base00);
+    padding: 15px;
 }
 
 .menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu li {
-  padding: 8px;
-  margin-bottom: 10px;
-  background-color: var(--base01);
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: var(--base01);
 }
 
 .menu li:hover {
-  background-color: var(--base02);
-  color: var(--base08);
+    background-color: var(--base02);
+    color: var(--base08);
 }
