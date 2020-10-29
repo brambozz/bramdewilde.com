@@ -58,6 +58,10 @@ img {
     box-shadow: 5px 5px var(--base01);
 }
 
+div {
+    border: 1px solid red;
+}
+
 
 .header {
     background-color: var(--base00);
@@ -70,6 +74,14 @@ img {
     padding: 0;
 }
 
+.icon:hover {
+    color: var(--base08);
+}
+
+.center {
+    text-align: center;
+}
+
 .menu li {
     padding: 8px;
     margin-bottom: 10px;
@@ -79,4 +91,8 @@ img {
 .menu li:hover {
     background-color: var(--base02);
     color: var(--base08);
+}
+
+a {
+    color: var(--base05);
 }
