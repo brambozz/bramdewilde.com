@@ -27,6 +27,24 @@
     "footer";
 }
 
+img {
+    max-height: 100%;
+    max-width: 50%;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.headshot {
+    grid-area: headshot;
+    text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
     .container {
         display: grid;
@@ -36,6 +54,14 @@
         "headshot text"
         "headshot text"
         "footer footer";
+    }
+    .headshot {
+        grid-area: headshot;
+        text-align: center;
+        position: relative;
+    }
+    img {
+        position: absolute;
     }
 }
 
@@ -49,6 +75,14 @@
         ". headshot text ."
         ". footer footer .";
     }
+    .headshot {
+        grid-area: headshot;
+        text-align: center;
+        position: relative;
+    }
+    img {
+        max-width: 75%;
+    }
 }
 
 html {
@@ -57,28 +91,11 @@ html {
     color: var(--text);
 }
 
-img {
-    max-height: 100%;
-    max-width: 50%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
 
 div {
     border: 0px solid red;
 }
 
-.headshot {
-    grid-area: headshot;
-    text-align: center;
-    position: relative;
-}
 
 .text {
     grid-area: text;
