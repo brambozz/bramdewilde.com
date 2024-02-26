@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Bram de Wilde</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../css/academicons.min.css"/>
+<link rel="stylesheet" href="../css/fork-awesome.min.css"/>
+<link rel="icon" type="image/png" sizes="32x32" href="../media/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../media/favicon-16x16.png">
+</head>
+<body>
+
+<div class="center">
+    <h1>Where am I</h1>
+
+
+<iframe id="open-web-calendar" 
+    style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;"
+    src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbrambozz%2Fwhere%2Fmain%2Fwhere.ics&amp;tab=week"
+    sandbox="allow-scripts allow-same-origin allow-top-navigation"
+    allowTransparency="true" scrolling="no" 
+    frameborder="0" height="200px" width="60%"></iframe>
+
+<!-- Cal inline embed code begins -->
+<h1>Plan a meeting</h1>
+<div style="width:60%;height:100%;overflow:scroll;margin:auto" id="my-cal-inline"></div>
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init",  {origin:"https://cal.com"});
+
+  Cal("inline", {
+	elementOrSelector:"#my-cal-inline",
+	calLink: "bramdewilde/meet",
+	layout: "month_view"
+  });
+
+  Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+  <!-- Cal inline embed code ends -->
+
+</div>
+
+</body>
+</html> 
+
